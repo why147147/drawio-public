@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-08T00:41:34.092Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.37" etag="eFl0BRWbwpP7-ThIWi4q" version="21.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-08T00:43:24.807Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.37" etag="P-gEuXTKjfQUom5lwIzR" version="21.3.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="625" dy="735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,13 +8,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-0" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="120" width="100" height="60" as="geometry" />
+          <mxGeometry x="330" y="140" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Fd6dRY1V7zR3x4quJQAK-1" target="Fd6dRY1V7zR3x4quJQAK-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-1" value="导入svm训练相关包" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="320" y="230" width="120" height="40" as="geometry" />
+          <mxGeometry x="320" y="240" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Fd6dRY1V7zR3x4quJQAK-3" target="Fd6dRY1V7zR3x4quJQAK-11">
           <mxGeometry relative="1" as="geometry" />
@@ -47,11 +47,34 @@
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-13" value="特征分类及标准化处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="380" y="390" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Fd6dRY1V7zR3x4quJQAK-14" value="svm.fit(xTrain, yTrain)" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Fd6dRY1V7zR3x4quJQAK-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="570" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-14" value="svm.fit(xTrain, yTrain)&lt;br&gt;joblib.dump(model)" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="320" y="525" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Fd6dRY1V7zR3x4quJQAK-16" value="训练模型并持久化" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="390" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Fd6dRY1V7zR3x4quJQAK-17" target="Fd6dRY1V7zR3x4quJQAK-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-17" value="model.predict()" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="635" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-19" value="模型预测" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="395" y="593" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Fd6dRY1V7zR3x4quJQAK-22" target="Fd6dRY1V7zR3x4quJQAK-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-22" value="评估模型" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="725" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fd6dRY1V7zR3x4quJQAK-24" value="结束" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="325" y="825" width="110" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
